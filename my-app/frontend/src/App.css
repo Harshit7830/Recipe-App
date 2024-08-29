@@ -1,0 +1,369 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(1300deg, #5b9dc9, #ff2600); 
+  padding: 0 20px;
+  position: relative; /* Ensures the navbar stays at the top */
+  width: 100%;
+  top: 0;
+  height: initial; 
+  overflow-x: hidden;
+  z-index: 0; /* Keeps the navbar above other content */
+}
+
+
+.logo {
+  height: 5rem; /* Adjust the size as needed */
+  margin-right:0px; /* Space between logo and heading */
+}
+.logo2{
+  height: 5rem;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+  height: initial;
+  width: 40%;
+  font-size: 1rem;
+}
+
+
+
+.search input {
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  left:-2rem;
+  width: 24rem;
+  font-size: 1.3rem;
+  background: transparent;
+  margin-top: -3px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  
+  
+  
+  
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  display: flex;
+  position: relative;
+  left: -1px;
+  font-family: 'bold';
+  color: black;
+ 
+}
+.right div{
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font: bold;
+}
+.right div:hover{
+  background-color: cornsilk
+}
+.right button{
+  background-color: cornsilk;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  font: black;
+}
+
+.link {
+  margin: 10px;
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+
+/* .profile-dropdown {
+  position: relative;
+}
+
+.profile-dropdown div {
+  margin: 0 10px;
+}
+
+.profile-menu {
+  position: relative;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  border: 1px solid #000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.profile-menu div {
+  margin-bottom: 10px;
+}
+
+.profile-menu button {
+  padding: 5px 10px;
+  background-color: #0000ff;
+  color: #ffffff;
+} */
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+
+  
+}
+
+.profile-menu {
+  display: flex;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+
+
+
+
+.btn{
+  padding: 1rem;
+  font-size: 10rem;
+  font-weight: bold;
+  background-color:cornsilk;
+  border-radius: 5%;
+  margin: 2rem;
+  border: 2px solid blue;
+  border-radius: 1rem;
+}
+.img {
+  perspective: 8px;
+  width: 100%; /* Ensure the container takes up the full width available */
+  overflow: hidden; /* Hide overflow if necessary */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  margin-top: 4 rem;
+}
+
+.img img {
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+  width: 80%; /* Adjust width as needed */
+  /* Ensure it does not exceed container width */
+  /* Maintain aspect ratio */
+  display: block; /* Remove extra spacing */
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+*/* General Styles */
+/* App.css */
+
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: -moz-hidden-unscrollable;
+  
+  
+  
+  
+ 
+  
+  
+  
+  background: linear-gradient(1300deg, #f1efed, #2595c2); 
+}
+.auth-wrapper {
+  display: grid;
+  place-items: center;
+  height: 10vh; /* Full viewport height */
+}
+
+.auth-container {
+  background: linear-gradient(1300deg, #aa907f, #2595c2); 
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+  width: 100vh;
+  max-width: 500px;
+  text-align: center;
+ 
+  justify-content: center;
+  position: centor;
+  margin-bottom: 30px;
+}
+
+.auth-container h2 {
+  margin-bottom: 25px;
+  color: #0a0808;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.input-box input {
+  width: 80%;
+  padding: 15px 15px 15px 50px;
+  font-size: 35px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: linear-gradient(1300deg, #fdfcfb, #fbfcfc); 
+  
+}
+
+.input-box input:focus {
+  background: linear-gradient(1300deg, #b4aeaa, #e3e6e7); 
+  outline: none;
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+  top: -15px;
+  font-size: 25px;
+  color: black;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #a05353, #8e44ad);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #a490ad, #b9671a);
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+p {
+  margin-top: 20px;
+  color: #333;
+  font-size: 25px;
+}
+
+p a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #f74109;
+  text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+.Link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}.view-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(50%);
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+ 
+  
+}
+.checkbox-container {
+  font-size: 25px;
+  margin: 2px;
+}
+
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px; /* Set a width to make the checkbox larger */
+  height: 20px; /* Set a height to make the checkbox larger */
+  transform: scale(1.5); /* Increase the scale factor to make the checkbox larger */
+  margin-right: 10px; /* Add some space between the checkbox and the label */
+}
+
+.btn-3d {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  background-color: cornsilk;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px rgb(182, 180, 174);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-3d:active {
+  box-shadow: 0 2px rgb(70, 189, 149);
+  
+  background-color: red;
+  cursor: pointer;
+  
+}
+
+.btn-3d:focus {
+  outline: none;
+}
+/* General Navbar styles */
+/* General Navbar styles */
+.nav.minimized .search, 
+.nav.minimized .link {
+  display: none; /* Hides the search bar and category links */
+}
+
+
+.Toastify__toast-container {
+  position: relative;
+  left: 0.1rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 2rem;
+  justify-content: center;
+  text-align: center;
+}
